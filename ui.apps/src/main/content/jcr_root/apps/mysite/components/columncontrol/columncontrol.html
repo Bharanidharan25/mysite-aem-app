@@ -1,0 +1,27 @@
+<div class="cq-placeholder" data-emptytext="column control component"></div>
+<sly data-sly-test="${wcmmode.edit}">Please configure column control component</sly>
+
+<sly data-sly-test="${properties.columncontrol=='column-control-33-33-33'}">
+	<div class="${properties.columncontrol}">
+		<div class="${properties.columncontrol}-c0">
+			<div data-sly-resource="${@path = 'parleft', resourceType='foundation/components/parsys'}" data-sly-unwrap></div>
+		</div>
+		<div class="${properties.columncontrol}-c1">
+			<div data-sly-resource="${@path = 'parmiddle', resourceType='foundation/components/parsys'}" data-sly-unwrap></div>
+		</div>
+		<div class="${properties.columncontrol}-c2">
+			<div data-sly-resource="${@path = 'parright', resourceType='foundation/components/parsys'}" data-sly-unwrap></div>
+		</div>
+	</div>
+</sly>
+
+<sly data-sly-test="${properties.columncontrol == 'column-control-50-50' || properties.columncontrol == 'column-control-40-60' || properties.columncontrol == 'column-control-60-40'}">
+	<div class="${properties.columncontrol}">
+		<div class="${properties.columncontrol}-c0">
+			<div data-sly-resource="${@path = 'parleft', resourceType='foundation/components/parsys'}"></div>
+		</div>
+		<div class="${properties.columncontrol}-c1">
+			<div data-sly-resource="${@path = 'parright', resourceType='foundation/components/parsys'}"></div>
+		</div>
+	</div>
+<sly>

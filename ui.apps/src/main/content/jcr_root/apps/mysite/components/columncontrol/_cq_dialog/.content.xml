@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jcr:root xmlns:sling="http://sling.apache.org/jcr/sling/1.0" xmlns:cq="http://www.day.com/jcr/cq/1.0" xmlns:jcr="http://www.jcp.org/jcr/1.0" xmlns:nt="http://www.jcp.org/jcr/nt/1.0"
+    jcr:primaryType="nt:unstructured"
+    jcr:title="Properties"
+    sling:resourceType="cq/gui/components/authoring/dialog">
+    <content
+        jcr:primaryType="nt:unstructured"
+        sling:resourceType="granite/ui/components/coral/foundation/fixedcolumns">
+        <items jcr:primaryType="nt:unstructured">
+            <column
+                jcr:primaryType="nt:unstructured"
+                sling:resourceType="granite/ui/components/coral/foundation/container">
+                <items jcr:primaryType="nt:unstructured">
+                    <title
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="granite/ui/components/coral/foundation/form/textfield"
+                        fieldLabel="Title"
+                        name="./title"/>
+                    <columncontrol
+                        jcr:primaryType="nt:unstructured"
+                        sling:resourceType="/libs/granite/ui/components/coral/foundation/form/select"
+                        fieldLabel="Column Control"
+                        name="./columncontrol">
+                        <items jcr:primaryType="nt:unstructured">
+                            <select
+                                jcr:primaryType="nt:unstructured"
+                                text="Select Column Division"/>
+                            <one
+                                jcr:primaryType="nt:unstructured"
+                                text="two Column(50%-50%) "
+                                value="column-control-50-50"/>
+                            <two
+                                jcr:primaryType="nt:unstructured"
+                                text="two Column(40%-60%) "
+                                value="column-control-40-60"/>
+                            <three
+                                jcr:primaryType="nt:unstructured"
+                                text="two Column(60%-40%) "
+                                value="column-control-60-40"/>
+                            <four
+                                jcr:primaryType="nt:unstructured"
+                                text="Three Column(33.3%-33.3%-33.3%) "
+                                value="column-control-33-33-33"/>
+                        </items>
+                    </columncontrol>
+                </items>
+            </column>
+        </items>
+    </content>
+</jcr:root>

@@ -1,0 +1,17 @@
+<!-- 
+    HTL Template for bharani 
+-->
+<!-- HTL Script to Read AEM Dialog Fields -->
+ 
+<h1 data-sly-test.exists="${ model.test }">bharani Data</h1>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-call="${template.placeholder @ isEmpty=!exists}">
+</sly>
+<div class="cmp-bharani" data-sly-use.model ="com.mysite.core.models.BharaniModel">
+ 
+    <div class="cmp-textfield" data-sly-test="${model.test}"><label>Entered Text:</label><p>${model.test}</p></div>
+
+    
+    
+    
+</div>

@@ -1,0 +1,17 @@
+<!-- 
+    HTL Template for TestingComponent5 
+-->
+<!-- HTL Script to Read AEM Dialog Fields -->
+ 
+<h1 data-sly-test.exists="${ model.mytext }">TestingComponent5 Data</h1>
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+  data-sly-call="${template.placeholder @ isEmpty=!exists}">
+</sly>
+<div class="cmp-TestingComponent5" data-sly-use.model ="com.mysite.core.models.TestingComponent5Model">
+ 
+    <div class="cmp-textfield" data-sly-test="${model.mytext}"><label>Entered Text:</label><p>${model.mytext}</p></div>
+
+    
+    
+    
+</div>

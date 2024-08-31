@@ -1,0 +1,23 @@
+<!-- 
+    HTL Template for testComponent 
+-->
+<!-- HTL Script to Read AEM Dialog Fields -->
+<sly data-sly-use.model="com.carrybag.core.models.TestComponentModel">
+    <div>
+        <h1>testComponent  Data</h1>
+
+        <!-- Text Field -->
+        <div class="cmp-textfield" data-sly-test="${model.test}"><label for="test">Entered Text:</label><p>${model.test}</p></div>
+
+
+
+        <!-- Checkbox -->
+         <div class="cmp-textfield" data-sly-test="${model.check != null}"><label>Checkbox Status:</label><p>${model.check ? 'Checked' : 'Unchecked'}</p></div>
+
+
+
+        <!-- Image Reference -->
+        {{image}}
+
+    </div>
+</sly>

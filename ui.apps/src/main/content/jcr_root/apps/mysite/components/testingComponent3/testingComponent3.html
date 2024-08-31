@@ -1,0 +1,23 @@
+<!-- 
+    HTL Template for testingComponent3 
+-->
+<!-- HTL Script to Read AEM Dialog Fields -->
+<sly data-sly-use.{{model}}="{{slingModel}}">
+    <div>
+        <h1>testingComponent3  Data</h1>
+
+        <!-- Text Field -->
+        <div class="cmp-textfield" data-sly-test="${model.text}"><label>Entered Text:</label><p>${model.text}</p></div>
+
+
+
+        <!-- Checkbox -->
+         <div class="cmp-textfield" data-sly-test="${model.mycheckbox != null}"><label>Checkbox Status:</label><p>${model.mycheckbox ? 'Checked' : 'Unchecked'}</p></div>
+
+
+
+        <!-- Image Reference -->
+        {{image}}
+
+    </div>
+</sly>

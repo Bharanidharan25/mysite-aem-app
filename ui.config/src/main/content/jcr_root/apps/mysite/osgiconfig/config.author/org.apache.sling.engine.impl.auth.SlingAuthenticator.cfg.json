@@ -1,0 +1,12 @@
+{
+    "sling.auth.requirements":[
+      "+/",
+      "-/libs/granite/core/content/login",
+      "-/etc.clientlibs",
+      "-/etc/clientlibs/granite",
+      "-/libs/dam/remoteassets/content/loginerror",
+      "-/aem/update.theme",
+      "-/linkexpired",
+      "-/mysite/getPageData"
+    ]
+  }
