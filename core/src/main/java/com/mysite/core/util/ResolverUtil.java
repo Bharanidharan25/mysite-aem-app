@@ -20,8 +20,7 @@ public final class ResolverUtil {
         paramMap.put( ResourceResolverFactory.SUBSERVICE, MY_SERVICE_USER );
 
         // fetches the admin service resolver using service user.
-        ResourceResolver resolver = resourceResolverFactory.getServiceResourceResolver(paramMap);
-        return resolver;
+        return resourceResolverFactory.getServiceResourceResolver(paramMap);
     }
 
 
